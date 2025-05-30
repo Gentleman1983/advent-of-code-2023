@@ -1,13 +1,13 @@
 plugins {
-    alias(libs.plugins.kotlin.jvm)
+    alias(aoc2023Libs.plugins.kotlin.jvm)
 }
 
 dependencies {
-    api(project(":utils"))
+    api(project(":aoc-utils"))
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation(libs.jgrapht.core)
+    implementation(aoc2023Libs.jgrapht.core)
 
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 
