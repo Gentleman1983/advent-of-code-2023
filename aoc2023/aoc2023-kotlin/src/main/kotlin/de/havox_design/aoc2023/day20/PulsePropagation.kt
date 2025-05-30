@@ -230,7 +230,7 @@ class PulsePropagation(private var filename: String) {
                 ?.set(from, isHigh)
 
             val inputs = nextConjunctionInputs[target] ?: emptyMap()
-            val output = ModuleType.processSignal(current!!.type, isHigh, nextState[target] ?: false, inputs)
+            val output = ModuleType.processSignal(current.type, isHigh, nextState[target] ?: false, inputs)
 
             when {
                 output != Pulse.NONE -> {
